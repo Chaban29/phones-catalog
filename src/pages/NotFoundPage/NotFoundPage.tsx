@@ -20,11 +20,12 @@ const NotFoundContainer = styled.div`
 `;
 
 const NotFoundPage: FC = (): JSX.Element => {
+  const errorStatus = '404';
   return (
     <NotFoundContainer>
       <StyledErrorPage>
         <Apple id={cl.rotateIcon} style={{ fontSize: '50px' }} />
-        Page is not Defined {erorr.toUpperCase()}
+        Page is not Defined {errorStatus.toUpperCase()}
       </StyledErrorPage>
       <NavLink id={cl.error__link} to='/'>
         Click To Home

@@ -2,7 +2,6 @@ import { FC } from 'react';
 import cl from './hero.module.scss';
 import { styled } from 'styled-components';
 import { Slider } from '../Slider/Slider';
-import slides from '../../mock/mock.json';
 
 const HeroSection = styled.section`
   width: 100%;
@@ -38,7 +37,7 @@ const Hero: FC = (): JSX.Element => {
           Welcome to Nice Gadgets store!
         </MainTitle>
         <div className={cl.swiper__div}>
-          <Slider slides={slides} />
+          <Slider slides={[]} />
         </div>
       </div>
     </HeroSection>
