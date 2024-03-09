@@ -3,6 +3,7 @@
 
 .hero__container {
   width: 100%;
+  gap: 70px;
   max-width: 1136px;
   display: flex;
   margin: 0 auto;
@@ -61,4 +62,11 @@
   .right__swipper {
     display: none;
   }
+}
+
+.swiper__div {
+  display: flex;
+  justify-content: center;
+  width: '100%';
+  object-fit: 'cover';
 }

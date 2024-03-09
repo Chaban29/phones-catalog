@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import { styled } from 'styled-components';
 import cl from '../header.module.scss';
-import Heart from '../../../images/icons/favorites-heart-icon.svg'
+import Heart from '../../../images/icons/favorites-heart-icon.svg';
 import Basket from '../../../images/icons/busket-Icon.svg';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const HeaderNavItems = styled.div`
   padding: 0;
@@ -19,7 +20,9 @@ const HeaderNav: FC = (): JSX.Element => {
       <button className={cl.shoppingCart__button}>
         <img src={Basket} alt='Basket Icon' />
       </button>
-      <button className={cl.burger__button}></button>
+      <button className={cl.burger__button}>
+        <MenuIcon style={{ width: '50px' }} />
+      </button>
     </HeaderNavItems>
   );
 };

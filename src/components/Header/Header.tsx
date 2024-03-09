@@ -64,7 +64,7 @@ const Header: FC = (): JSX.Element => {
         <HeaderNav />
       </HeaderContainer>
     </HeaderWrapper>
-  )
+  );
 };
 
 export { Header };

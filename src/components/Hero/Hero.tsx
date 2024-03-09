@@ -1,9 +1,8 @@
 import { FC } from 'react';
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import Banner from '../../images/banner/Banner.svg';
 import cl from './hero.module.scss';
-import { styled} from 'styled-components';
+import { styled } from 'styled-components';
+import { Slider } from '../Slider/Slider';
+import slides from '../../mock/mock.json';
 
 const HeroSection = styled.section`
   width: 100%;
@@ -31,17 +30,6 @@ const MainTitle = styled.h1`
   }
 `;
 
-const BannerIntro = styled.img`
-  width: 100%;
-  max-width: 1040px;
-  object-fit: cover;
-  border-radius: 20px;
-`;
-
-const StyledButtonHeight = styled.div`
-  height: 100%;
-`;
-
 const Hero: FC = (): JSX.Element => {
   return (
     <HeroSection>
@@ -49,26 +37,9 @@ const Hero: FC = (): JSX.Element => {
         <MainTitle className={cl.mainHero__title}>
           Welcome to Nice Gadgets store!
         </MainTitle>
-        <div className={cl.hero__swipper}>
-          <StyledButtonHeight>
-            <button className={cl.left__swipper}>
-              <KeyboardArrowLeftIcon style={{ fontSize: '30px' }} />
-            </button>
-          </StyledButtonHeight>
-          <div className={cl.hero__banner}>
-            <BannerIntro src={Banner} alt='Apple Banner' />
-          </div>
-          <StyledButtonHeight>
-            <button className={cl.right__swipper}>
-              <KeyboardArrowRightIcon style={{ fontSize: '30px' }} />
-            </button>
-          </StyledButtonHeight>
+        <div className={cl.swiper__div}>
+          <Slider slides={slides} />
         </div>
-      </div>
-      <div className={cl.swipper__items}>
-        <span className={cl.active}></span>
-        <span className={cl.swipper__item}></span>
-        <span className={cl.swipper__item}></span>
       </div>
     </HeroSection>
   );
