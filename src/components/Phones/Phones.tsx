@@ -3,7 +3,7 @@ import firstItem from '../../images/catalog-images/first-item.svg';
 import secondItem from '../../images/catalog-images/second-item.svg';
 import thirdItem from '../../images/catalog-images/third-item.svg';
 import fourItem from '../../images/catalog-images/four-item.svg';
-import cl from '../styles/phonesPage.module.scss';
+import cl from '../../pages/PhonesPage/phones.module.scss';
 import { FC } from 'react';
 
 export const Phones: FC = () => {
