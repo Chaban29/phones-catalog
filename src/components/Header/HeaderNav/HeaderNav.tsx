@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { styled } from 'styled-components';
 import cl from '../header.module.scss';
-import Heart from '../../../images/header/Favourites.svg';
-import Basket from '../../../images/header/Basket.svg';
+import Heart from '../../../images/icons/favorites-heart-icon.svg'
+import Basket from '../../../images/icons/busket-Icon.svg';
 
 const HeaderNavItems = styled.div`
   padding: 0;
