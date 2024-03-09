@@ -1,0 +1,46 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/variables.scss';
+
+.footer__menu {
+  display: flex;
+  gap: 64px;
+}
+
+.list__item > .list__link {
+  color: $secondary;
+  font-weight: 700;
+  line-height: 91.667%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out 0s;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.footer__buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer__buttons > .footer__button {
+  color: $secondary;
+  font-weight: 500;
+  background: transparent;
+  line-height: 91.667%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+.arrow__top {
+  padding: 2px 5px;
+  background: $secondary;
+  border-radius: 5px;
+}
+
+@media (max-width: 450px) {
+  .footer__menu {
+    gap: 35px;
+  }
+}
