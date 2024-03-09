@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { CatalogPage } from '../CatalogPage/CatalogPage';
 import cl from './phones.module.scss';
 import { Phones } from '../../components/Phones/Phones';
-import { Pagination } from '../../components/Pagination/Pagination';
+import PaginationRounded from '../../components/Pagination/Pagination';
 
 const PhonesPage: FC = (): JSX.Element => {
   return (
@@ -13,7 +13,7 @@ const PhonesPage: FC = (): JSX.Element => {
         mainTitle='Mobile phones'
       />
       <Phones />
-      <Pagination />
+      <PaginationRounded />
     </main>
   );
 };
