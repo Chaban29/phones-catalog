@@ -74,7 +74,6 @@ const Footer: FC = (): JSX.Element => {
             <ArrowCircleUpIcon
               style={{
                 color: '#fff',
-                // marginTop: '5px',
                 height: '30px',
                 width: '30px',
               }}

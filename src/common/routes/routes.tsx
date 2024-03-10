@@ -6,6 +6,7 @@ interface IRoutesProps {
   ACCESSORIES: string;
   ERROR: string;
   FAVORITES: string;
+  CART: string;
 }
 
 const ROUTES: IRoutesProps = {
@@ -15,6 +16,7 @@ const ROUTES: IRoutesProps = {
   TABLETS: 'tablets',
   ACCESSORIES: 'accessories',
   FAVORITES: 'favorites',
+  CART: 'cart',
   ERROR: '*',
 };
 

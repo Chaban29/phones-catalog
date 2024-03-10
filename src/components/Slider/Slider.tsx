@@ -30,13 +30,25 @@ const Slider: React.FC<SliderProps> = () => {
       scrollbar={{ draggable: true }}
     >
       <SwiperSlide>
-        <img src={secondSlide} alt='' className={cl.img__slider} />
+        <img
+          src={secondSlide}
+          alt='Slider Product Image'
+          className={cl.img__slider}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={firstSlide} alt='' className={cl.img__slider} />
+        <img
+          src={firstSlide}
+          alt='Slider Product Image'
+          className={cl.img__slider}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={thirdSlice} alt='' className={cl.img__slider} />
+        <img
+          src={thirdSlice}
+          alt='Slider Product Image'
+          className={cl.img__slider}
+        />
       </SwiperSlide>
     </Swiper>
   );

@@ -6,7 +6,7 @@ const AccessoriesPage: FC = (): JSX.Element => {
     <div>
       <CatalogPage
         smallTitle=' Accessories'
-        // models='88 models'
+        models='88 models'
         mainTitle=' Accessories'
       />
     </div>

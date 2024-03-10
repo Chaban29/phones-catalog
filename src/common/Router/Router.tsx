@@ -7,6 +7,7 @@ import { TabletsPage } from '../../pages/TabletsPage/TabletsPage';
 import { AccessoriesPage } from '../../pages/AccessoriesPage/AccessoriesPage';
 import { NotFoundPage } from '../../pages/NotFoundPage/NotFoundPage';
 import { FavoritesPage } from '../../pages/FavoritesPage/FavoritesPage';
+import { CartPage } from '../../pages/CartPage/CartPage';
 
 const Router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const Router = createBrowserRouter([
       {
         path: ROUTES.FAVORITES,
         element: <FavoritesPage />,
+      },
+      {
+        path: ROUTES.CART,
+        element: <CartPage />,
       },
     ],
   },

@@ -18,8 +18,7 @@ const HeroSection = styled.section`
 `;
 
 const MainTitle = styled.h1`
-  padding: 25px 0;
-  padding-top: 50px;
+  padding: 10px 0;
   color: #313237;
   font-size: 48px;
   font-weight: 700;

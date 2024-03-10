@@ -20,9 +20,11 @@ const HeaderNav: FC = (): JSX.Element => {
           <img src={Heart} alt='Heart Icon' />
         </button>
       </NavLink>
-      <button className={cl.shoppingCart__button}>
-        <img src={Basket} alt='Basket Icon' />
-      </button>
+      <NavLink to={'cart'}>
+        <button className={cl.shoppingCart__button}>
+          <img src={Basket} alt='Basket Icon' />
+        </button>
+      </NavLink>
       <button className={cl.burger__button}>
         <MenuIcon style={{ width: '50px' }} />
       </button>

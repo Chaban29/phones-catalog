@@ -6,10 +6,6 @@ import { HeaderNav } from './HeaderNav/HeaderNav';
 import { CustomLink } from '../UI Components/CustomLink/CustomLink';
 
 const HeaderWrapper = styled.header`
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // z-index: 3;
   width: 100%;
   display: flex;
   align-items: center;
@@ -23,15 +19,20 @@ const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
 `;
 
 const Header: FC = (): JSX.Element => {
+  const toPageBottomScrolled = (): void => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <HeaderWrapper className={cl.header}>
       <HeaderContainer className={cl.header__navContainer}>
-        <div className={cl.header__logo}>
+        <div onClick={toPageBottomScrolled} className={cl.header__logo}>
           <a href='#!' className={cl.logo__link}>
             <AppleIcon style={{ fontSize: '30px', color: '#89939A' }} />
           </a>
