@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Phones Catalog Project with React, TypeScript, Vite, and others Libraries
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
