@@ -22,6 +22,12 @@ const CategoryItem: FC<ICategoryItemProps> = ({
   banner,
   to,
 }: ICategoryItemProps): JSX.Element => {
+  const categoryTopScrolled = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <CategoryItemBlock>
       <img
@@ -31,7 +37,11 @@ const CategoryItem: FC<ICategoryItemProps> = ({
         className={cl.category__banner}
       />
       <div className={cl.category__titles}>
-        <NavLink to={to} className={cl.category__title}>
+        <NavLink
+          onClick={categoryTopScrolled}
+          to={to}
+          className={cl.category__title}
+        >
           {categoryTitle}
         </NavLink>
         <span className={cl.category__models}>{categoryModels}</span>

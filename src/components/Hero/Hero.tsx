@@ -2,6 +2,7 @@ import { FC } from 'react';
 import cl from './hero.module.scss';
 import { styled } from 'styled-components';
 import { Slider } from '../Slider/Slider';
+import AppleLogo from '../../favicon/favicon.png';
 
 const HeroSection = styled.section`
   width: 100%;
@@ -35,6 +36,12 @@ const Hero: FC = (): JSX.Element => {
       <div className={cl.hero__container}>
         <MainTitle className={cl.mainHero__title}>
           Welcome to Apple Catalog store!
+          <img
+            src={AppleLogo}
+            alt='Store Apple Logo'
+            width={48}
+            style={{ marginLeft: '40px' }}
+          />
         </MainTitle>
         <div className={cl.swiper__div}>
           <Slider slides={[]} />
