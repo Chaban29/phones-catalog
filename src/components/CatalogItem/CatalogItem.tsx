@@ -7,11 +7,14 @@ import { CustomButton } from '../UI Components/CustomButton/CustomButton';
 import { CatalogButton } from '../UI Components/CatalogButton/CatalogButton';
 
 interface ICatalogItemProps {
+  phoneId: number;
   imgUrl: string;
   title: string;
   price: string;
   displaySize: string;
   discount?: string;
+  memory?: number;
+  capacity?: number;
 }
 
 const CardItem = styled.div`
@@ -30,6 +33,8 @@ const CatalogItem: FC<ICatalogItemProps> = ({
   price,
   displaySize,
   discount,
+  capacity,
+  memory,
 }: ICatalogItemProps): JSX.Element => {
   return (
     <CardItem>
@@ -38,12 +43,16 @@ const CatalogItem: FC<ICatalogItemProps> = ({
         <h3 style={{ paddingBottom: '20px' }} className={cl.card__title}>
           {title}
         </h3>
-        <CustomButton style={{ border: '2px solid #6d6474' }} to={''}>
+        <CustomButton
+          style={{ border: '2px solid #6d6474' }}
+          to={''}
+        >
           <NavLink className={cl.view__product} to={''}>
             View Product
           </NavLink>
         </CustomButton>
       </div>
+
       <span className={cl.price}>
         {price} <strong id={cl.discount}>{discount}</strong>
       </span>
@@ -54,11 +63,11 @@ const CatalogItem: FC<ICatalogItemProps> = ({
         </li>
         <li className={cl.list__item}>
           Capacity
-          <span className={cl.list__itemSecondary}>128 GB</span>
+          <span className={cl.list__itemSecondary}>{memory}</span>
         </li>
         <li className={cl.list__item}>
           RAM
-          <span className={cl.list__itemSecondary}>6 GB</span>
+          <span className={cl.list__itemSecondary}>{capacity}</span>
         </li>
       </ul>
       <div className={cl.catalog__buttonItems}>

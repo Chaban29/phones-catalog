@@ -71,7 +71,14 @@ const Footer: FC = (): JSX.Element => {
             Back to top
           </button>
           <button className={cl.arrow__top} onClick={toUppPage}>
-            <ArrowCircleUpIcon style={{ color: '#fff', marginTop: '5px' }} />
+            <ArrowCircleUpIcon
+              style={{
+                color: '#fff',
+                // marginTop: '5px',
+                height: '30px',
+                width: '30px',
+              }}
+            />
           </button>
         </div>
       </FooterStyledWrapper>

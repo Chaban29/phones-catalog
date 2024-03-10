@@ -31,12 +31,17 @@
   line-height: 91.667%;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+  outline: none;
 }
 
 .arrow__top {
   padding: 2px 5px;
   background: $secondary;
   border-radius: 5px;
+  &:focus {
+    border: none;
+    outline: none;
+  }
 }
 
 @media (max-width: 450px) {

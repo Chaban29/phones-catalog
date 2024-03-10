@@ -5,6 +5,7 @@ interface IRoutesProps {
   TABLETS: string;
   ACCESSORIES: string;
   ERROR: string;
+  FAVORITES: string;
 }
 
 const ROUTES: IRoutesProps = {
@@ -13,9 +14,9 @@ const ROUTES: IRoutesProps = {
   PHONES: 'phones',
   TABLETS: 'tablets',
   ACCESSORIES: 'accessories',
+  FAVORITES: 'favorites',
   ERROR: '*',
 };
-
 
 // eslint-disable-next-line react-refresh/only-export-components
 export { ROUTES };

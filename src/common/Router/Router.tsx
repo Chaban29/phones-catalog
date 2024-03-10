@@ -6,6 +6,7 @@ import { PhonesPage } from '../../pages/PhonesPage/PhonesPage';
 import { TabletsPage } from '../../pages/TabletsPage/TabletsPage';
 import { AccessoriesPage } from '../../pages/AccessoriesPage/AccessoriesPage';
 import { NotFoundPage } from '../../pages/NotFoundPage/NotFoundPage';
+import { FavoritesPage } from '../../pages/FavoritesPage/FavoritesPage';
 
 const Router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const Router = createBrowserRouter([
       {
         path: ROUTES.ACCESSORIES,
         element: <AccessoriesPage />,
+      },
+      {
+        path: ROUTES.FAVORITES,
+        element: <FavoritesPage />,
       },
     ],
   },

@@ -1,25 +1,42 @@
-import { styled } from 'styled-components';
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
+import { FC } from 'react';
+import './pagination.scss';
 
-const CustomPagination = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 80px 0;
-`;
-export default function PaginationRounded() {
-  return (
-    <CustomPagination>
-      <Stack spacing={2}>
-        <Pagination
-          count={10}
-          color='primary'
-          variant='outlined'
-          shape='rounded'
-        />
-      </Stack>
-    </CustomPagination>
-  );
+interface PaginationProps {
+  phonePerPage: number;
+  totalPhones: number;
+  currentPage: number;
+  paginate: (pageNumber: number) => void;
 }
 
-export { PaginationRounded };
+const Pagination: FC<PaginationProps> = ({
+  phonePerPage,
+  totalPhones,
+  currentPage,
+  paginate,
+}: PaginationProps): JSX.Element => {
+  const pageNumbers: Array<number> = [];
+
+  for (let i = 1; i <= Math.ceil(totalPhones / phonePerPage); i++) {
+    pageNumbers.push(i);
+  }
+  return (
+    <div className='pagination center'>
+      {pageNumbers.map((number) => (
+        <li
+          className={`page-item ${number === currentPage ? 'active-page' : ''}`}
+          key={number}
+        >
+          <a
+            href={`#?page${number}`}
+            className='page-link active-page'
+            onClick={() => paginate(number)}
+          >
+            {number}
+          </a>
+        </li>
+      ))}
+    </div>
+  );
+};
+
+export { Pagination };

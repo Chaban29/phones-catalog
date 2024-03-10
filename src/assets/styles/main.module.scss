@@ -3,3 +3,11 @@
 @import './reset.scss';
 @import './variables.scss';
 @import './mixins.scss';
+
+button:focus {
+  outline: none;
+}
+
+h3 {
+  margin-bottom: 0;
+}

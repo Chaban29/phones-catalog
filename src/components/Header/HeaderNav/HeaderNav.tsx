@@ -4,6 +4,7 @@ import cl from '../header.module.scss';
 import Heart from '../../../images/icons/favorites-heart-icon.svg';
 import Basket from '../../../images/icons/busket-Icon.svg';
 import MenuIcon from '@mui/icons-material/Menu';
+import { NavLink } from 'react-router-dom';
 
 const HeaderNavItems = styled.div`
   padding: 0;
@@ -14,9 +15,11 @@ const HeaderNavItems = styled.div`
 const HeaderNav: FC = (): JSX.Element => {
   return (
     <HeaderNavItems>
-      <button className={cl.heart__button}>
-        <img src={Heart} alt='Heart Icon' />
-      </button>
+      <NavLink to='favorites'>
+        <button className={cl.heart__button}>
+          <img src={Heart} alt='Heart Icon' />
+        </button>
+      </NavLink>
       <button className={cl.shoppingCart__button}>
         <img src={Basket} alt='Basket Icon' />
       </button>

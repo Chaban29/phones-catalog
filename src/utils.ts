@@ -1,0 +1,10 @@
+const getNumbers = (from: number, to: number): number[] => {
+  const numbers: number[] = [];
+
+  for (let n = from; n <= to; n += 1) {
+    numbers.push(n);
+  }
+  return numbers;
+};
+
+export { getNumbers };

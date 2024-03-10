@@ -1,7 +1,6 @@
 @import '../../assets/styles/colors.scss';
 @import '../../assets/styles/variables.scss';
 
-
 .card__title {
   color: $primary;
   font-size: $primary-four-size;
@@ -68,6 +67,9 @@
 
 .image__hovered {
   cursor: pointer;
+  width: 200px;
+  height: 230px;
+  margin-bottom: 10px;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
   &:hover {
     transform: scale(1.05);
@@ -82,4 +84,5 @@
   width: 120px;
   display: flex;
   justify-content: center;
+  background: transparent;
 }

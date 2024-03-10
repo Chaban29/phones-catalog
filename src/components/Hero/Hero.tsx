@@ -34,7 +34,7 @@ const Hero: FC = (): JSX.Element => {
     <HeroSection>
       <div className={cl.hero__container}>
         <MainTitle className={cl.mainHero__title}>
-          Welcome to Nice Gadgets store!
+          Welcome to Apple Catalog store!
         </MainTitle>
         <div className={cl.swiper__div}>
           <Slider slides={[]} />

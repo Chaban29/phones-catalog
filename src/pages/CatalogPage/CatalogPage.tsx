@@ -20,13 +20,15 @@ const PhonesContainer = styled.div`
 interface CatalogPageProps {
   smallTitle: string;
   mainTitle: string;
+  models: string;
 }
 const CatalogPage: FC<CatalogPageProps> = ({
   smallTitle,
   mainTitle,
+  models,
 }: CatalogPageProps): JSX.Element => {
   const navigate = useNavigate();
-  const goBack = () => navigate(-1);
+  const goBack = () => navigate('/', { replace: true });
   return (
     <>
       <PhonesContainer className='Phones'>
@@ -44,6 +46,7 @@ const CatalogPage: FC<CatalogPageProps> = ({
         <div className={cl.phones__titles}>
           <MainTitle>{mainTitle}</MainTitle>
         </div>
+        <div className={cl.models__title}>{models}</div>
         <form action='#!' className={cl.phones__dropDowns}>
           <div className={cl.first__dropDown}>
             <label htmlFor='phones__list' className={cl.dropDown__label}>
