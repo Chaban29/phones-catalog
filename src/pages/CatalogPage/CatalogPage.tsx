@@ -40,49 +40,13 @@ const CatalogPage: FC<CatalogPageProps> = ({
           >
             <img onClick={goBack} src={homeIcon} alt='home icon' />
           </NavLink>
-          <img src={arrowRightIcon} alt='' />
+          <img src={arrowRightIcon} alt='arrow right icon' />
           <h5 className={cl.phones__title}>{smallTitle}</h5>
         </div>
         <div className={cl.phones__titles}>
           <MainTitle>{mainTitle}</MainTitle>
         </div>
         <div className={cl.models__title}>{models}</div>
-        <form action='#!' className={cl.phones__dropDowns}>
-          <div className={cl.first__dropDown}>
-            <label htmlFor='phones__list' className={cl.dropDown__label}>
-              Sort by
-            </label>
-            <select
-              id='phones__list'
-              value='phones list'
-              className={cl.dropDown}
-            >
-              <option value='phone item' className={cl.dropDown__option}>
-                Newest
-              </option>
-            </select>
-          </div>
-          <div className={cl.second__dropDown}>
-            <label
-              htmlFor='phones__categoriesList'
-              className={cl.dropDown__label}
-            >
-              Items on page
-            </label>
-            <select
-              id='phones__categoriesList'
-              value='phones category numbers'
-              className={cl.dropDown}
-            >
-              <option
-                value='phone category number'
-                className={cl.dropDown__option}
-              >
-                16
-              </option>
-            </select>
-          </div>
-        </form>
       </PhonesContainer>
     </>
   );

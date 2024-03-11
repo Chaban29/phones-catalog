@@ -28,40 +28,6 @@
   line-height: 150%;
 }
 
-.phones__dropDowns {
-  display: flex;
-  gap: 16px;
-}
-
-.dropDown__label {
-  color: $secondary;
-  font-size: $primary-first-size;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.first__dropDown,
-.second__dropDown {
-  width: 176px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.dropDown {
-  border: 1.5px solid $icons;
-  color: $primary;
-  padding: 10px;
-  border-radius: 5px;
-  appearance: none;
-  background: url(../../../images/icons/down.svg) no-repeat;
-  background-position: right;
-}
-
-.dropDown__option {
-  color: $primary;
-}
-
 .phones__catalog {
   display: flex;
   flex-direction: column;

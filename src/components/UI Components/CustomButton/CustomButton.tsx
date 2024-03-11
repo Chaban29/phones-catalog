@@ -14,7 +14,7 @@ const CustomButton: FC<CustomButtonProps> = ({
   ...props
 }) => {
   return (
-    <Button {...props} style={style} variant='outlined' component='a' href={to}>
+    <Button {...props} style={style} variant='outlined' component='button' href={to}>
       {children}
     </Button>
   );

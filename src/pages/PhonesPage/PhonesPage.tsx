@@ -5,6 +5,7 @@ import { Phones } from '../../components/Phones/Phones';
 import { useState, useEffect } from 'react';
 import phonesProducts from '../../common/products/products.json';
 import { Pagination } from '../../components/Pagination/Pagination';
+import { CustomSelect } from '../../components/Select/Select';
 
 interface Phone {
   phoneId: number;
@@ -71,11 +72,16 @@ const PhonesPage: FC = (): JSX.Element => {
 
   return (
     <main className={cl.phones} style={{ margin: '0 auto' }}>
-      <CatalogPage
-        smallTitle='Phones'
-        models='95 models'
-        mainTitle='Mobile phones'
-      />
+      <div className={cl.catalog__container}>
+        <CatalogPage
+          smallTitle='Phones'
+          models='95 models'
+          mainTitle='Mobile phones'
+        />
+        <div className={cl.page__select}>
+          <CustomSelect />
+        </div>
+      </div>
       <div>
         <Phones products={currentUserPage} />
         <div className={cl.pagination__item}>
