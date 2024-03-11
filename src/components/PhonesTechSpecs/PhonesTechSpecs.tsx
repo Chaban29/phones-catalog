@@ -1,16 +1,6 @@
 import { FC } from 'react';
 import cl from './phonesTechSpecs.module.scss';
-
-interface IPhonesTechSpecsProps {
-  screen: string;
-  resolution: string;
-  processor: string;
-  ram: string;
-  memory: string;
-  camera: string;
-  zoom: string;
-  cell: string;
-}
+import { IPhonesTechSpecsProps } from '../../interfaces/phones-tech-specs';
 
 const PhonesTechSpecs: FC<IPhonesTechSpecsProps> = ({
   screen,

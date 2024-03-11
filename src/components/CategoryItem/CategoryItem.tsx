@@ -2,19 +2,13 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { FC } from 'react';
 import cl from '../ShopCategory/shopCategory.module.scss';
+import { ICategoryItemProps } from '../../interfaces/category-item';
 
 const CategoryItemBlock = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
 `;
-
-interface ICategoryItemProps {
-  categoryTitle: string;
-  categoryModels: string;
-  banner: string;
-  to: string;
-}
 
 const CategoryItem: FC<ICategoryItemProps> = ({
   categoryTitle,

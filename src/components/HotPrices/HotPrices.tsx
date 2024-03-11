@@ -8,10 +8,7 @@ import secondItem from '../../images/catalog-images/second-item.svg';
 import thirdItem from '../../images/catalog-images/third-item.svg';
 import fourItem from '../../images/catalog-images/four-item.svg';
 import { CatalogItem } from '../CatalogItem/CatalogItem';
-
-interface IHotPricesProps {
-  title: string;
-}
+import { IHotPricesProps } from '../../interfaces/hot-prices';
 
 const ModelsCatalogSection = styled.section`
   width: 100%;
@@ -25,15 +22,13 @@ const ModelsCatalogSection = styled.section`
   padding-right: 0px;
 `;
 
-
-
 const HotPrices: FC<IHotPricesProps> = ({
-  title,
+  pricesTitle,
 }: IHotPricesProps): JSX.Element => {
   return (
     <ModelsCatalogSection>
       <div className={cl.modelsCatalog__block}>
-        <h2 className={cl.catalog__title}>{title}</h2>
+        <h2 className={cl.catalog__title}>{pricesTitle}</h2>
         <div className={cl.catalog__buttons}>
           <button className={cl.catalog__button}>
             <KeyboardDoubleArrowLeftIcon

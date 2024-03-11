@@ -1,22 +1,7 @@
 import { CatalogItem } from '../CatalogItem/CatalogItem';
 import cl from '../../pages/PhonesPage/phones.module.scss';
+import { PhonesProps } from '../../interfaces/phones';
 import { FC } from 'react';
-
-interface Phone {
-  phoneId: number;
-  imgUrl: string;
-  title: string;
-  price: string;
-  discount: string;
-  memory: number;
-  capacity: number;
-  displaySize: string;
-}
-
-interface PhonesProps {
-  products: Phone[];
-  loading?: boolean;
-}
 
 export const Phones: FC<PhonesProps> = ({ products }: PhonesProps) => {
   return (

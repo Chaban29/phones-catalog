@@ -67,8 +67,8 @@
 
 .image__hovered {
   cursor: pointer;
-  width: 200px;
-  height: 230px;
+  width: 170;
+  height: 200px;
   margin-bottom: 10px;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
   &:hover {
@@ -85,4 +85,11 @@
   display: flex;
   justify-content: center;
   background: transparent;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -8,10 +8,7 @@ import secondItem from '../../images/catalog-images/second-item.svg';
 import thirdItem from '../../images/catalog-images/third-item.svg';
 import fourItem from '../../images/catalog-images/four-item.svg';
 import cl from './modelsCatalog.module.scss';
-
-interface IModelsCatalogProps {
-  title: string;
-}
+import { IModelsCatalogProps } from '../../interfaces/models-catalog';
 
 const ModelsCatalogSection = styled.section`
   width: 100%;

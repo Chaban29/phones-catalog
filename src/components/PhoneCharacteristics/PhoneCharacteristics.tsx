@@ -1,18 +1,7 @@
 import cl from '../styles/phonesCharacteristics.module.scss';
 import { AddButton } from '../UI Components/AddButton/AddButton';
 import { FC } from 'react';
-
-interface PhoneCharacteristicsProps {
-  firstImg: string;
-  secondImg: string;
-  thirdImg: string;
-  fourImg: string;
-  sixImg: string;
-  screen: string;
-  processor: string;
-  resolution: string;
-  ram: string;
-}
+import { PhoneCharacteristicsProps } from '../../interfaces/phone-characteristics';
 
 const PhoneCharacteristics: FC<PhoneCharacteristicsProps> = ({
   firstImg,

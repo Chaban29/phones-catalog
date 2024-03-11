@@ -25,8 +25,6 @@ const FooterStyledWrapper = styled.div`
   }
 `;
 
-const FooterNavigation = styled.nav``;
-
 const Footer: FC = (): JSX.Element => {
   const toUppPage = () => {
     window.scrollTo({
@@ -42,7 +40,7 @@ const Footer: FC = (): JSX.Element => {
             <AppleIcon style={{ fontSize: '30px', color: '#89939A' }} />
           </a>
         </>
-        <FooterNavigation>
+        <>
           <ul className={cl.footer__menu}>
             <li className={cl.list__item}>
               <a
@@ -65,7 +63,7 @@ const Footer: FC = (): JSX.Element => {
               </a>
             </li>
           </ul>
-        </FooterNavigation>
+        </>
         <div className={cl.footer__buttons}>
           <button className={cl.footer__button} onClick={toUppPage}>
             Back to top

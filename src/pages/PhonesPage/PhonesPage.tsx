@@ -6,17 +6,7 @@ import { useState, useEffect } from 'react';
 import phonesProducts from '../../common/products/products.json';
 import { Pagination } from '../../components/Pagination/Pagination';
 import { CustomSelect } from '../../components/Select/Select';
-
-interface Phone {
-  phoneId: number;
-  imgUrl: string;
-  title: string;
-  price: string;
-  discount: string;
-  memory: number;
-  capacity: number;
-  displaySize: string;
-}
+import { Phone } from '../../interfaces/phone';
 
 const PhonesPage: FC = (): JSX.Element => {
   const [products, setProducts] = useState<Phone[]>([]);

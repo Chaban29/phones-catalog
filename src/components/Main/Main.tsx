@@ -15,7 +15,7 @@ const Main: FC = (): JSX.Element => {
       <Hero />
       <ModelsCatalog title='Brand new models' />
       <ShopCategory title='Shop by category' />
-      <HotPrices title='Hot prices' />
+      <HotPrices pricesTitle='Hot prices' />
     </MainContainer>
   );
 };

@@ -5,6 +5,7 @@ import homeIcon from '../../images/icons/Home.svg';
 import arrowRightIcon from '../../images/icons/Chevron (Arrow Right).svg';
 import { MainTitle } from '../../components/UI Components/MainTitle/MainTitle';
 import { FC } from 'react';
+import { CatalogPageProps } from '../../interfaces/catalog-page';
 
 const PhonesContainer = styled.div`
   display: flex;
@@ -17,11 +18,6 @@ const PhonesContainer = styled.div`
   padding-bottom: 36px;
 `;
 
-interface CatalogPageProps {
-  smallTitle: string;
-  mainTitle: string;
-  models: string;
-}
 const CatalogPage: FC<CatalogPageProps> = ({
   smallTitle,
   mainTitle,

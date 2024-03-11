@@ -2,15 +2,8 @@ import { NavLink } from 'react-router-dom';
 import cl from '../../pages/PhonesPage/phones.module.scss';
 import homeIcon from '../../images/icons/Home.svg';
 import arrowRightIcon from '../../images/icons/Chevron (Arrow Right).svg';
+import { PhoneItemProps } from '../../interfaces/phone';
 import { FC } from 'react';
-
-interface PhoneItemProps {
-  smallTitle?: string;
-  mainTitle?: string;
-  models?: string;
-  phoneTitle: string;
-  back?: string;
-}
 
 const PhoneItem: FC<PhoneItemProps> = ({
   smallTitle,
@@ -18,7 +11,6 @@ const PhoneItem: FC<PhoneItemProps> = ({
   phoneTitle,
   back,
 }: PhoneItemProps) => {
-  // const { id } = useParams();
   return (
     <div className={cl.phone__item}>
       <div className={cl.phones__navigation}>
