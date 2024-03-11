@@ -85,7 +85,7 @@ const PhonesPage: FC = (): JSX.Element => {
       <div>
         <Phones products={currentUserPage} />
         <div className={cl.pagination__item}>
-          <button className='btn btn-primary' id='btn' onClick={prevPage}>
+          <button className='btn btn-secondary' id='btn' onClick={prevPage}>
             Prev Page
           </button>
           <Pagination
@@ -96,7 +96,7 @@ const PhonesPage: FC = (): JSX.Element => {
           />
           <button
             id='btn'
-            className='btn btn-primary'
+            className='btn btn-secondary'
             disabled={!isNextPageEnabled}
             onClick={nextPage}
           >
