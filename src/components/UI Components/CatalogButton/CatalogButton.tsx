@@ -1,16 +1,6 @@
 import Button from '@mui/material/Button';
+import cl from './catalog-button.module.scss';
 
 export const CatalogButton = () => {
-  return (
-    <Button
-      style={{
-        background: '#313237',
-        color: '#fff',
-        fontWeight: '700',
-        width: '145px',
-      }}
-    >
-      Add to cart
-    </Button>
-  );
+  return <Button className={cl.catalog__buttonItem}>Add to cart</Button>;
 };

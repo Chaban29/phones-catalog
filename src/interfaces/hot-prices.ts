@@ -1,3 +1,3 @@
 export interface IHotPricesProps {
-  pricesTitle: string;
+  pricesTitle?: string;
 }

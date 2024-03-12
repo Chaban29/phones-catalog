@@ -41,7 +41,7 @@ const CustomSelect: FC = (): JSX.Element => {
         options={options}
         components={animatedComponents}
         isMulti
-        placeholder='Chose Product'
+        placeholder='Choose an option'
       />
     </div>
   );

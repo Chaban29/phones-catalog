@@ -1,7 +1,6 @@
 @import '../../assets/styles/colors.scss';
 @import '../../assets/styles/variables.scss';
 
-
 .catalog__title {
   font-size: $primary-third-size;
   color: $primary;
@@ -25,7 +24,7 @@
 
 .catalog__button {
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 10px;
   background: $secondary;
 }
 

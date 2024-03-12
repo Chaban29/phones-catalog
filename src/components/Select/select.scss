@@ -21,7 +21,7 @@
     background: transparent !important;
     border: none !important;
     border-radius: 0 !important;
-    border-bottom: 2px solid #999aa9 !important;
+    border-bottom: 2px solid lighten(#292e2e, 8%) !important;
     box-shadow: none !important;
   }
   &--menu-is-open {
@@ -53,11 +53,12 @@
     padding: 5px !important;
   }
   &__multi-value__label {
+    font-weight: 600 !important;
     font-size: 80% !important;
     color: rgba(white, 0.7);
   }
   &__multi-value__remove {
-    color: rgba(white, 0.8);
+    color: #66766e !important;
     &:hover {
       background: transparent !important;
       color: white !important;

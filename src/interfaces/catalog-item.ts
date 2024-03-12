@@ -1,4 +1,8 @@
-export interface ICatalogItemProps {
+export interface IHotPricesProps {
+  pricesTitle?: string;
+}
+
+export interface ICatalogItemProps extends IHotPricesProps {
   phoneId?: number;
   imgUrl: string;
   title?: string;
