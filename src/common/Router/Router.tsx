@@ -8,6 +8,7 @@ import { AccessoriesPage } from '../../pages/AccessoriesPage/AccessoriesPage';
 import { NotFoundPage } from '../../pages/NotFoundPage/NotFoundPage';
 import { FavoritesPage } from '../../pages/FavoritesPage/FavoritesPage';
 import { CartPage } from '../../pages/CartPage/CartPage';
+import { PhonePage } from '../../pages/PhonePage/PhonePage';
 
 const Router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const Router = createBrowserRouter([
       {
         path: ROUTES.PHONES,
         element: <PhonesPage />,
+      },
+      {
+        path: '/products/:phoneId',
+        element: <PhonePage />,
       },
       {
         path: ROUTES.TABLETS,

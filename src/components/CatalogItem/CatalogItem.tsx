@@ -25,6 +25,7 @@ const CatalogItem: FC<ICatalogItemProps> = ({
   discount,
   capacity,
   memory,
+  phoneId,
 }: ICatalogItemProps): JSX.Element => {
   return (
     <CardItem>
@@ -34,7 +35,7 @@ const CatalogItem: FC<ICatalogItemProps> = ({
           {title}
         </h3>
         <CustomButton style={{ border: '2px solid #6d6474' }} to={''}>
-          <NavLink className={cl.view__product} to={''}>
+          <NavLink className={cl.view__product} to={`/products/${phoneId}`}>
             View Product
           </NavLink>
         </CustomButton>

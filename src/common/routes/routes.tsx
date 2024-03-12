@@ -2,6 +2,7 @@ interface IRoutesProps {
   LAYOUT: string;
   HOME: string;
   PHONES: string;
+  PHONE: string;
   TABLETS: string;
   ACCESSORIES: string;
   ERROR: string;
@@ -13,6 +14,7 @@ const ROUTES: IRoutesProps = {
   LAYOUT: '/',
   HOME: '/',
   PHONES: 'phones',
+  PHONE: ':productId',
   TABLETS: 'tablets',
   ACCESSORIES: 'accessories',
   FAVORITES: 'favorites',
