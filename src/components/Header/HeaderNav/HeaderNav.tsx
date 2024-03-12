@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import { styled } from 'styled-components';
 import cl from '../header.module.scss';
 import Heart from '../../../images/icons/favorites-heart-icon.svg';
@@ -28,6 +28,15 @@ const HeaderNav: FC = (): JSX.Element => {
       }
     }
   };
+
+  useEffect(() => {
+    if (heartButtonRef.current) {
+      heartButtonRef.current.style.borderBottom = 'none';
+    }
+    if (cartButtonRef.current) {
+      cartButtonRef.current.style.borderBottom = 'none';
+    }
+  }, []);
 
   return (
     <HeaderNavItems>

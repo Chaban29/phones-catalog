@@ -2,17 +2,17 @@ import { FC } from 'react';
 import './select.scss';
 import Select, { OnChangeValue } from 'react-select';
 import { useState } from 'react';
-import { IOption } from './select-interface/select.interfaces';
+import { IOption } from '../../interfaces/select-interface/select.interfaces';
 import makeAnimated from 'react-select/animated';
 
 const options: IOption[] = [
   {
-    label: 'Sort by name',
-    value: 'By name',
+    label: 'Name',
+    value: 'Sort by name',
   },
   {
-    label: 'Sort by models',
-    value: 'By models',
+    label: 'Models',
+    value: 'Sort by models',
   },
 ];
 
