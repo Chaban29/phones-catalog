@@ -34,7 +34,7 @@ const Header: FC = (): JSX.Element => {
       <HeaderContainer className={cl.header__navContainer}>
         <div onClick={toPageBottomScrolled} className={cl.header__logo}>
           <a href='#!' className={cl.logo__link}>
-            <AppleIcon style={{ fontSize: '30px', color: '#89939A' }} />
+            <AppleIcon className={cl.apple__logo} style={{ fontSize: '30px', color: '#89939A' }} />
           </a>
           <h3 className={cl.logo__title}>Apple Catalog</h3>
         </div>

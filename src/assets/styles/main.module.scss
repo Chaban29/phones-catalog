@@ -12,3 +12,7 @@ h3,
 ul {
   margin-bottom: 0;
 }
+
+*::selection {
+  background-color: #3131311b;
+}
