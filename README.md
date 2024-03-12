@@ -1,5 +1,10 @@
 # Phones Catalog Project with React, TypeScript, Vite, and others Libraries
 
+
+![image](https://github.com/Chaban29/phones-catalog/assets/137433410/e4c6f65c-68c8-4338-9f83-1e9113631953)
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
