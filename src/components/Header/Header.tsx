@@ -1,9 +1,10 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { styled } from 'styled-components';
 import AppleIcon from '@mui/icons-material/Apple';
 import cl from './header.module.scss';
 import { HeaderNav } from './HeaderNav/HeaderNav';
 import { CustomLink } from '../UI Components/CustomLink/CustomLink';
+import { BurgerMenu } from '../Burger/BurgerMenu';
 
 const HeaderWrapper = styled.header`
   width: 100%;
@@ -23,18 +24,28 @@ const HeaderContainer = styled.div`
 `;
 
 const Header: FC = (): JSX.Element => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const toPageBottomScrolled = (): void => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
+
   return (
     <HeaderWrapper className={cl.header}>
       <HeaderContainer className={cl.header__navContainer}>
         <div onClick={toPageBottomScrolled} className={cl.header__logo}>
           <a href='#!' className={cl.logo__link}>
-            <AppleIcon className={cl.apple__logo} style={{ fontSize: '30px', color: '#89939A' }} />
+            <AppleIcon
+              className={cl.apple__logo}
+              style={{ fontSize: 30, color: '#89939A' }}
+            />
           </a>
           <h3 className={cl.logo__title}>Apple Catalog</h3>
         </div>
@@ -63,7 +74,13 @@ const Header: FC = (): JSX.Element => {
           </ul>
         </nav>
         <HeaderNav />
+        <div onClick={toggleMenu} className={cl.burger__buttonBlock}>
+          <button type='button' className={cl.button__burgerLine}></button>
+          <button type='button' className={cl.button__burgerLine}></button>
+          <button type='button' className={cl.button__burgerLine}></button>
+        </div>
       </HeaderContainer>
+      {isMenuOpen && <BurgerMenu />}
     </HeaderWrapper>
   );
 };

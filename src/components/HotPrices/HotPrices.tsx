@@ -48,8 +48,8 @@ const HotPrices: FC<ICatalogItemProps> = ({
             imgUrl={product.imgUrl}
             displaySize={product.displaySize}
             title={product.title}
-            price={product.price}
-            discount={product.discount}
+            price={`${product.price} $`}
+            discount={`${product.discount} $`}
             capacity={product.capacity}
             memory={product.memory}
           />

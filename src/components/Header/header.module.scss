@@ -50,8 +50,20 @@
   height: 70px;
 }
 
-.burger__button {
-  display: none;
+.burger__buttonBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding-right: 24px;
+}
+
+.button__burgerLine {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #313131b4;
+  border-radius: 10px;
 }
 
 .logo__title {
@@ -117,7 +129,7 @@
   }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 992px) {
   .navigation__bar {
     display: none;
   }
@@ -128,7 +140,10 @@
   .shoppingCart__button {
     display: none;
   }
-  .burger__button {
-    display: inline-block;
+}
+
+@media (min-width: 992px) {
+  .burger__buttonBlock {
+    display: none;
   }
 }
