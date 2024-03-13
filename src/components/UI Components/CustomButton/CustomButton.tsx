@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 
 interface CustomButtonProps {
   children: React.ReactNode;
-  to?: string;
   style?: React.CSSProperties;
 }
 

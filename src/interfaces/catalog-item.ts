@@ -4,10 +4,10 @@ export interface IHotPricesProps {
 
 export interface ICatalogItemProps extends IHotPricesProps {
   phoneId?: number;
-  imgUrl: string;
+  imgUrl?: string;
   title?: string;
-  price: string;
-  displaySize: string;
+  price?: string;
+  displaySize?: string;
   discount?: string;
   memory?: number;
   capacity?: number;

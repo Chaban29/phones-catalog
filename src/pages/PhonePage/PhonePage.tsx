@@ -5,6 +5,7 @@ import products from '../../common/products/products.json';
 
 const PhonePage: FC = (): JSX.Element => {
   const [selectedProduct] = useState(products[0]);
+
   return (
     <div className={cl.phone__layout}>
       <ProductItem product={selectedProduct} />

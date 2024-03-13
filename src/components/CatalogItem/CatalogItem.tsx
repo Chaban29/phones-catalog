@@ -34,7 +34,7 @@ const CatalogItem: FC<ICatalogItemProps> = ({
         <h3 style={{ paddingBottom: '20px' }} className={cl.card__title}>
           {title}
         </h3>
-        <CustomButton style={{ border: '2px solid #6d6474' }} to={''}>
+        <CustomButton style={{ border: '2px solid #6d6474' }} >
           <NavLink className={cl.view__product} to={`/products/${phoneId}`}>
             View Product
           </NavLink>

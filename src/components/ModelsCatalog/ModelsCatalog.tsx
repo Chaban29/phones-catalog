@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import styled from 'styled-components';
-import { CatalogItem } from '../CatalogItem/CatalogItem';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import cl from './modelsCatalog.module.scss';
 import products from '../../common/products/products.json';
 import { ICatalogItemProps } from '../../interfaces/catalog-item';
+import { Phones } from '../Phones/Phones';
 
 const ModelsCatalogSection = styled.section`
   width: 100%;
@@ -36,18 +36,7 @@ const ModelsCatalog: FC<ICatalogItemProps> = ({
         </div>
       </div>
       <div className={cl.catalog__cards}>
-        {products.map((product) => (
-          <CatalogItem
-            key={product.phoneId}
-            imgUrl={product.imgUrl}
-            displaySize={product.displaySize}
-            title={product.title}
-            price={`${product.price} $`}
-            discount={`${product.discount} $`}
-            capacity={product.capacity}
-            memory={product.memory}
-          />
-        ))}
+        <Phones products={products} />
       </div>
     </ModelsCatalogSection>
   );
