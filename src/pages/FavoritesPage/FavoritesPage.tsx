@@ -6,7 +6,6 @@ const FavoritesPage: FC = (): JSX.Element => {
     <CatalogPage
       mainTitle='Favorites'
       smallTitle='Favorites'
-      models='74 models'
     />
   );
 };

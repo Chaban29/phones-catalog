@@ -7,6 +7,10 @@ export interface ProductItemProps {
   memory?: number;
   capacity?: number;
   displaySize?: string;
+  firstImage?: string;
+  secondImage?: string;
+  thirdImage?: string;
+  fourImage?: string;
 }
 
 export interface ProductProps {

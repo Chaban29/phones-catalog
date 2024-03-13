@@ -54,6 +54,31 @@ const ProductItem: FC<ProductProps> = (): JSX.Element => {
         </button>
       </div>
       <h2 className={cl.phoneModel__title}>{phone.title}</h2>
+      <div className={cl.product__gallery}>
+        <div className={cl.phone__images}>
+          <img
+            src={phone.firstImage}
+            alt='iphone image'
+            className={cl.phoneSmall__image}
+          />
+          <img
+            src={phone.secondImage}
+            alt='iphone image'
+            className={cl.phoneSmall__image}
+          />
+          <img
+            src={phone.thirdImage}
+            alt='iphone image'
+            className={cl.phoneSmall__image}
+          />
+          <img
+            src={phone.fourImage}
+            alt='iphone image'
+            className={cl.phoneSmall__image}
+          />
+        </div>
+        <img src={phone.imgUrl} alt='product image' className={cl.phone__img} />
+      </div>
     </>
   );
 };
