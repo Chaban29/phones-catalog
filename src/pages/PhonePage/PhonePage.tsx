@@ -3,7 +3,7 @@ import cl from './phonePage.module.scss';
 import { ProductItem } from '../../components/ProductItem/ProductItem';
 import products from '../../common/products/products.json';
 
-const PhonePage: FC = (): JSX.Element => {
+const PhonePage: FC = () => {
   const [selectedProduct] = useState(products[0]);
 
   return (

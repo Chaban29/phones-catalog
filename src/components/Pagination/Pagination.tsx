@@ -13,7 +13,7 @@ const Pagination: FC<PaginationProps> = ({
   totalPhones,
   currentPage,
   paginate,
-}: PaginationProps): JSX.Element => {
+}: PaginationProps) => {
   const pageNumbers: Array<number> = [];
 
   for (let i = 1; i <= Math.ceil(totalPhones / phonePerPage); i++) {

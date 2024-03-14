@@ -7,8 +7,8 @@ import { StrictMode } from 'react';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const RootWrapper = createGlobalStyle`
-* {
-  font-family: "Poppins", sans-serif;
+body {
+  font-family: 'Montserrat' !important;
 }
 `;
 

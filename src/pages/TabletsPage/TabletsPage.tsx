@@ -3,7 +3,7 @@ import { CatalogPage } from '../CatalogPage/CatalogPage';
 import { CustomSelect } from '../../components/Select/Select';
 import cl from './tablets.module.scss';
 
-const TabletsPage: FC = (): JSX.Element => {
+const TabletsPage: FC = () => {
   return (
     <div className={cl.catalog__container}>
       <CatalogPage

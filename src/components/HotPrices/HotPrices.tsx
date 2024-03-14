@@ -21,7 +21,7 @@ const ModelsCatalogSection = styled.section`
 
 const HotPrices: FC<ICatalogItemProps> = ({
   pricesTitle,
-}: ICatalogItemProps): JSX.Element => {
+}: ICatalogItemProps) => {
   return (
     <ModelsCatalogSection>
       <div className={cl.modelsCatalog__block}>

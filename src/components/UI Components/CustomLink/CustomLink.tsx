@@ -5,7 +5,7 @@ interface ICustomLinkProps {
   children: ReactNode;
   to: string;
   className: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const CustomLink: FC<ICustomLinkProps> = ({

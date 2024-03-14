@@ -4,8 +4,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import appleLogo from '../../favicon/favicon.png';
 import { useRef } from 'react';
 import { CustomLink } from '../UI Components/CustomLink/CustomLink';
+import { TypeMenuLinks } from '../../interfaces/burger-menu';
 
-const MENU_LINKS = [
+const MENU_LINKS: TypeMenuLinks = [
   {
     linkId: 1,
     title: 'HOME',
@@ -28,10 +29,10 @@ const MENU_LINKS = [
   },
 ];
 
-const BurgerMenu: FC = (): JSX.Element => {
-  const buttonRef = useRef(null);
-  const burgerMenuRef = useRef(null);
-  const [isMenuClosed, setIsMenuClosed] = useState(false);
+const BurgerMenu: FC = () => {
+  const buttonRef = useRef<null>(null);
+  const burgerMenuRef = useRef<null>(null);
+  const [isMenuClosed, setIsMenuClosed] = useState<boolean>(false);
 
   const toggleMenu = (): void => {
     setIsMenuClosed(!isMenuClosed);

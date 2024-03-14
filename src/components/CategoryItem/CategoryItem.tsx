@@ -15,7 +15,7 @@ const CategoryItem: FC<ICategoryItemProps> = ({
   categoryModels,
   banner,
   to,
-}: ICategoryItemProps): JSX.Element => {
+}: ICategoryItemProps) => {
   const categoryTopScrolled = () => {
     window.scrollTo({
       top: 0,

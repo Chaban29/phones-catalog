@@ -25,7 +25,7 @@ const FooterStyledWrapper = styled.div`
   }
 `;
 
-const Footer: FC = (): JSX.Element => {
+const Footer: FC = () => {
   const toUppPage = () => {
     window.scrollTo({
       top: 0,
@@ -36,9 +36,14 @@ const Footer: FC = (): JSX.Element => {
     <FooterContainer>
       <FooterStyledWrapper>
         <>
-          <a href='#!'>
-            <AppleIcon style={{ fontSize: '30px', color: '#89939A' }} />
-          </a>
+          <button className={cl.logo__buttonUp} onClick={toUppPage}>
+            <a href='#!'>
+              <AppleIcon
+                style={{ fontSize: '30' }}
+                className={cl.footer__appleLogo}
+              />
+            </a>
+          </button>
         </>
         <>
           <ul className={cl.footer__menu}>
@@ -69,13 +74,7 @@ const Footer: FC = (): JSX.Element => {
             Back to top
           </button>
           <button className={cl.arrow__top} onClick={toUppPage}>
-            <ArrowCircleUpIcon
-              style={{
-                color: '#fff',
-                height: '30px',
-                width: '30px',
-              }}
-            />
+            <ArrowCircleUpIcon className={cl.arrow__circle} />
           </button>
         </div>
       </FooterStyledWrapper>

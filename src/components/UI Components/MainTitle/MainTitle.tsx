@@ -16,7 +16,7 @@ interface IMainTitleProps {
   children: ReactNode;
 }
 
-const MainTitle: FC<IMainTitleProps> = ({ children }: IMainTitleProps) => {
+const MainTitle: FC<IMainTitleProps> = ({ children }) => {
   return <MainTitleStyled>{children}</MainTitleStyled>;
 };
 

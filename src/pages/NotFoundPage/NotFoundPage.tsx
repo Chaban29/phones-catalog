@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Apple } from '@mui/icons-material';
 import styled from 'styled-components';
 import cl from './notFound.module.scss';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const StyledErrorPage = styled.div`
   display: flex;
@@ -18,14 +18,21 @@ const NotFoundContainer = styled.div`
   display: flex;
   flex-direction: column;
 `;
+interface NotFoundProps {
+  statusText: string;
+  message: string;
+}
 
-const NotFoundPage: FC = (): JSX.Element => {
-  const errorStatus = '404';
+const NotFoundPage: FC<NotFoundProps> = () => {
+  const location = useLocation();
+  const error = location.state?.error;
+  const errorStatusCode: string = '404';
   return (
     <NotFoundContainer>
       <StyledErrorPage>
         <Apple id={cl.rotateIcon} style={{ fontSize: '50px' }} />
-        Page is not Defined {errorStatus.toUpperCase()}
+        Page is not Defined {errorStatusCode}
+        {error?.statusText ?? error?.message}
       </StyledErrorPage>
       <NavLink id={cl.error__link} to='/'>
         Click To Home

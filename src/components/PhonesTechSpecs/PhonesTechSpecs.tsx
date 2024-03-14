@@ -11,7 +11,7 @@ const PhonesTechSpecs: FC<IPhonesTechSpecsProps> = ({
   camera,
   zoom,
   cell,
-}: IPhonesTechSpecsProps): JSX.Element => {
+}: IPhonesTechSpecsProps) => {
   return (
     <article className={cl.techSpecs__block}>
       <h2 className={cl.techSpecs__title}>Tech specs</h2>

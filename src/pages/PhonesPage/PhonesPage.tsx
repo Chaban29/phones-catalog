@@ -8,7 +8,7 @@ import { Pagination } from '../../components/Pagination/Pagination';
 import { CustomSelect } from '../../components/Select/Select';
 import { Phone } from '../../interfaces/phone';
 
-const PhonesPage: FC = (): JSX.Element => {
+const PhonesPage: FC = () => {
   const [products, setProducts] = useState<Phone[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [phonePerPage] = useState<number>(4);

@@ -46,6 +46,24 @@
   }
 }
 
+.logo__buttonUp {
+  background: transparent;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.footer__appleLogo {
+  color: #89939a;
+}
+
+.arrow__circle {
+  color: #fff;
+  height: 30px;
+  width: 30px;
+}
+
 @media (max-width: 450px) {
   .footer__menu {
     gap: 35px;

@@ -11,7 +11,7 @@ const HeaderNavItems = styled.div`
   align-items: center;
 `;
 
-const HeaderNav: FC = (): JSX.Element => {
+const HeaderNav: FC = () => {
   const heartButtonRef = useRef<HTMLButtonElement>(null);
   const cartButtonRef = useRef<HTMLButtonElement>(null);
 

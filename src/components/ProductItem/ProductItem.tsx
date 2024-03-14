@@ -8,7 +8,7 @@ import { ProductProps } from '../../interfaces/product-item';
 import products from '../../common/products/products.json';
 import { NotFoundPage } from '../../pages/NotFoundPage/NotFoundPage';
 
-const ProductItem: FC<ProductProps> = (): JSX.Element => {
+const ProductItem: FC<ProductProps> = () => {
   const navigate = useNavigate();
   const { phoneId } = useParams<{ phoneId: string }>();
   const parsedPhoneId = phoneId ? parseInt(phoneId) : undefined;
@@ -22,7 +22,7 @@ const ProductItem: FC<ProductProps> = (): JSX.Element => {
     navigate(-1);
   };
   if (!phone) {
-    return <NotFoundPage />;
+    return <NotFoundPage statusText='404' message='This page is not defined' />;
   }
 
   return (

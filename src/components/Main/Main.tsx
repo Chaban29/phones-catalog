@@ -9,7 +9,7 @@ const MainContainer = styled.div`
   width: 100%;
 `;
 
-const Main: FC = (): JSX.Element => {
+const Main: FC = () => {
   return (
     <MainContainer>
       <Hero />
