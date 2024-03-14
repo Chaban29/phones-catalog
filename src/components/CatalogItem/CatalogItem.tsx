@@ -27,15 +27,26 @@ const CatalogItem: FC<ICatalogItemProps> = ({
   memory,
   phoneId,
 }: ICatalogItemProps): JSX.Element => {
+  const toUpPage = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <CardItem>
+    <CardItem className={cl.cardItem}>
       <div className={cl.card__container}>
         <img src={imgUrl} alt='iphone' className={cl.image__hovered} />
         <h3 style={{ paddingBottom: '20px' }} className={cl.card__title}>
           {title}
         </h3>
-        <CustomButton style={{ border: '2px solid #6d6474' }} >
-          <NavLink className={cl.view__product} to={`/products/${phoneId}`}>
+        <CustomButton style={{ border: '2px solid #6d6474' }}>
+          <NavLink
+            onClick={toUpPage}
+            className={cl.view__product}
+            to={`/products/${phoneId}`}
+          >
             View Product
           </NavLink>
         </CustomButton>

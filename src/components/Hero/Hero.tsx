@@ -36,6 +36,7 @@ const Hero: FC = (): JSX.Element => {
         <MainTitle className={cl.mainHero__title}>
           Welcome to Apple Catalog store!
           <img
+            className={cl.appleLogo}
             src={AppleLogo}
             alt='Store Apple Logo'
             width={48}
