@@ -14,10 +14,11 @@ const MainTitleStyled = styled.h1`
 
 interface IMainTitleProps {
   children: ReactNode;
+  className: string;
 }
 
-const MainTitle: FC<IMainTitleProps> = ({ children }) => {
-  return <MainTitleStyled>{children}</MainTitleStyled>;
+const MainTitle: FC<IMainTitleProps> = ({ children, className }) => {
+  return <MainTitleStyled className={className}>{children}</MainTitleStyled>;
 };
 
 export { MainTitle };

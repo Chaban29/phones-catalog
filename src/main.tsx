@@ -4,11 +4,12 @@ import './assets/styles/main.module.scss';
 import { styled, createGlobalStyle } from 'styled-components';
 import { Fragment } from 'react/jsx-runtime';
 import { StrictMode } from 'react';
+import { Loader } from './components/Loader/Loader';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const RootWrapper = createGlobalStyle`
 body {
-  font-family: 'Montserrat' !important;
+  font-family: "Poppins", sans-serif;
 }
 `;
 
@@ -26,9 +27,11 @@ const root = ReactDOMClient.createRoot(
 root.render(
   <StrictMode>
     <Fragment>
-      <App />
       <RootWrapper />
-      <AppContainer />
+      <Loader>
+        <App />
+        <AppContainer />
+      </Loader>
     </Fragment>
   </StrictMode>
 );
