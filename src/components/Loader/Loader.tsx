@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { FC, ReactNode } from 'react';
 import { useState, useEffect } from 'react';
 import './loader.scss';

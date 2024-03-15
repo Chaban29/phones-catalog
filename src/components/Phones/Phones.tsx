@@ -1,3 +1,4 @@
+import React from 'react';
 import { CatalogItem } from '../CatalogItem/CatalogItem';
 import cl from '../../pages/PhonesPage/phones.module.scss';
 import { PhonesProps } from '../../interfaces/phones';
@@ -14,8 +15,8 @@ export const Phones: FC<PhonesProps> = ({ products }: PhonesProps) => {
             imgUrl={product.imgUrl}
             title={product.title}
             phoneId={product.phoneId}
-            capacity={product.capacity}
-            memory={product.memory}
+            capacity={`${product.capacity} GB`}
+            memory={`${product.memory} GB`}
             discount={`${product.discount}$`}
             price={`${product.price}$`}
           />

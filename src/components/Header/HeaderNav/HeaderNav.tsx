@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from 'react';
+import React, { FC, useEffect, useRef } from 'react';
 import { styled } from 'styled-components';
 import cl from '../header.module.scss';
 import Heart from '../../../images/icons/favorites-heart-icon.svg';
@@ -15,26 +15,26 @@ const HeaderNav: FC = () => {
   const heartButtonRef = useRef<HTMLButtonElement>(null);
   const cartButtonRef = useRef<HTMLButtonElement>(null);
 
-  const handleChangeButtonColor = (
-    ref: React.RefObject<HTMLButtonElement>
-  ): void => {
-    if (ref.current) {
-      ref.current.style.borderBottom = '2px solid #313131';
-      if (ref === heartButtonRef && cartButtonRef.current) {
-        cartButtonRef.current.style.borderBottom = 'none';
-      } else if (ref === cartButtonRef && heartButtonRef.current) {
-        heartButtonRef.current.style.borderBottom = 'none';
-      }
-    }
-  };
-
-  useEffect(() => {
+  const removeBorder = (): void => {
     if (heartButtonRef.current) {
       heartButtonRef.current.style.borderBottom = 'none';
     }
     if (cartButtonRef.current) {
       cartButtonRef.current.style.borderBottom = 'none';
     }
+  };
+
+  const handleChangeButtonColor = (
+    ref: React.RefObject<HTMLButtonElement>
+  ): void => {
+    removeBorder();
+    if (ref.current) {
+      ref.current.style.borderBottom = '3px solid #313131';
+    }
+  };
+
+  useEffect(() => {
+    removeBorder();
   }, []);
 
   return (
