@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { FC, useState } from 'react';
 import cl from './phonePage.module.scss';
 import { ProductItem } from '../../components/ProductItem/ProductItem';

@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { FC } from 'react';
 import { Header } from '../../components/Header/Header';
 import { Footer } from '../../components/Footer/Footer';

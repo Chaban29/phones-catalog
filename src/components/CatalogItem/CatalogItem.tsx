@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { FC } from 'react';
 import cl from './catalogItem.module.scss';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -70,7 +71,10 @@ const CatalogItem: FC<ICatalogItemProps> = ({
       <div className={cl.catalog__buttonItems}>
         <CatalogButton />
         <button className={cl.favorite__button}>
-          <FavoriteBorderIcon className={cl.favorite__icon} />
+          <FavoriteBorderIcon
+            style={{ fontSize: 30 }}
+            className={cl.favorite__icon}
+          />
         </button>
       </div>
     </CardItem>

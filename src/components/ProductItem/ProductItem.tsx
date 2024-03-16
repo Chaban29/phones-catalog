@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import homeIcon from '../../images/icons/Home.svg';
 import rightArrowIcon from '../../images/icons/Chevron (Arrow Right).svg';
@@ -7,6 +7,7 @@ import cl from '../../pages/PhonePage/phonePage.module.scss';
 import { ProductProps } from '../../interfaces/product-item';
 import products from '../../common/products/products.json';
 import { NotFoundPage } from '../../pages/NotFoundPage/NotFoundPage';
+import { PhoneCharacteristics } from '../PhoneCharacteristics/PhoneCharacteristics';
 
 const ProductItem: FC<ProductProps> = () => {
   const navigate = useNavigate();
@@ -78,6 +79,7 @@ const ProductItem: FC<ProductProps> = () => {
           />
         </div>
         <img src={phone.imgUrl} alt='product image' className={cl.phone__img} />
+        <PhoneCharacteristics />
       </div>
     </>
   );
