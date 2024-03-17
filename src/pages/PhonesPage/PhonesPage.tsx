@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { CatalogPage } from '../CatalogPage/CatalogPage';
 import cl from './phones.module.scss';
 import { Phones } from '../../components/Phones/Phones';

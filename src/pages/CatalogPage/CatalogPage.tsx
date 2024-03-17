@@ -1,3 +1,4 @@
+import * as React from 'react';
 import styled from 'styled-components';
 import cl from './catalog.module.scss';
 import { NavLink, useNavigate } from 'react-router-dom';

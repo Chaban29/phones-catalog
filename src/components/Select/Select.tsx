@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { FC } from 'react';
 import './select.scss';
 import Select, { OnChangeValue } from 'react-select';
@@ -14,12 +15,16 @@ const options: IOption[] = [
     label: 'Models',
     value: 'Sort by models',
   },
+  {
+    label: 'Price',
+    value: 'Sort by price',
+  },
 ];
 
 const animatedComponents = makeAnimated();
 
-const CustomSelect: FC = (): JSX.Element => {
-  const [currentSort, setCurrentSort] = useState(['Name', 'Models']);
+const CustomSelect: FC = () => {
+  const [currentSort, setCurrentSort] = useState(['Name', 'Models', 'Price']);
 
   const getValue = () => {
     return currentSort

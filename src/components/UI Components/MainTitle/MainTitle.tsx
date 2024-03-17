@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import React, { FC, ReactNode } from 'react';
 import { styled } from 'styled-components';
 
 const MainTitleStyled = styled.h1`
@@ -14,7 +14,7 @@ const MainTitleStyled = styled.h1`
 
 interface IMainTitleProps {
   children: ReactNode;
-  className: string;
+  className?: string;
 }
 
 const MainTitle: FC<IMainTitleProps> = ({ children, className }) => {
